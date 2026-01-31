@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Example() {
+export default function NotFoundPage() {
   return (
     <div className="flex justify-center min-h-screen m-auto">
       <div className="flex flex-col items-center justify-center text-sm max-md:px-4">
