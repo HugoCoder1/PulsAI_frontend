@@ -140,7 +140,7 @@ export function MobileSidebar() {
                       : "text-muted-foreground hover:bg-muted hover:text-foreground"
                   )}
                 >
-                  <item.icon className="w-5 h-5 flex-shrink-0" />
+                  <item.icon className="w-5 h-5 shrink-0" />
                   <span className="font-medium">{item.title}</span>
                 </Link>
               );
@@ -149,14 +149,14 @@ export function MobileSidebar() {
             {/* User Profile */}
             <div className="mt-4 pt-4 border-t border-border">
               <div className="flex items-center gap-3 px-3 py-2">
-                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0">
                   <span className="text-secondary-foreground font-medium">
-                    JD
+                    HH
                   </span>
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-foreground truncate">
-                    Jean Dupont
+                    Hugues Hugo
                   </p>
                   <p className="text-sm text-muted-foreground truncate">
                     Admin

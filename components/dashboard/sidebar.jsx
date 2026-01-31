@@ -137,7 +137,7 @@ export function Sidebar() {
             >
               <item.icon
                 className={cn(
-                  "w-5 h-5 flex-shrink-0",
+                  "w-5 h-5 shrink-0",
                   isActive && "text-primary-foreground"
                 )}
               />
@@ -190,7 +190,7 @@ export function Sidebar() {
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               )}
             >
-              <item.icon className="w-5 h-5 flex-shrink-0" />
+              <item.icon className="w-5 h-5 shrink-0" />
               <AnimatePresence>
                 {!collapsed && (
                   <motion.span
@@ -215,7 +215,7 @@ export function Sidebar() {
               collapsed && "justify-center"
             )}
           >
-            <div className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+            <div className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center shrink-0">
               <span className="text-secondary-foreground font-medium text-sm">
                 JD
               </span>
@@ -229,7 +229,7 @@ export function Sidebar() {
                   className="flex-1 min-w-0"
                 >
                   <p className="text-sm font-medium text-foreground truncate">
-                    Jean Dupont
+                    Hugues Hugo
                   </p>
                   <p className="text-xs text-muted-foreground truncate">
                     Admin

@@ -13,9 +13,10 @@ import { MessageSquare, Ticket, Users, TrendingUp } from "lucide-react";
 export default function DashboardPage() {
   return (
     <div className="min-h-screen">
+      {/* Header component */}
       <Header
         title="Tableau de bord"
-        subtitle="Bienvenue, Jean ! Voici un aperçu de votre activité."
+        subtitle="Bienvenue, Hugues ! Voici un aperçu de votre activité."
       />
 
       <div className="p-4 lg:p-6 space-y-6">

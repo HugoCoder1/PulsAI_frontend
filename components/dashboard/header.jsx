@@ -160,7 +160,7 @@ export function Header({ title, subtitle }) {
                       <div className="flex items-start gap-3">
                         <div
                           className={cn(
-                            "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
+                            "w-8 h-8 rounded-lg flex items-center justify-center shrink-0",
                             notif.type === "message" &&
                               "bg-primary/10 text-primary",
                             notif.type === "ticket" &&
@@ -191,7 +191,7 @@ export function Header({ title, subtitle }) {
                           </p>
                         </div>
                         {notif.unread && (
-                          <span className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-1" />
+                          <span className="w-2 h-2 bg-primary rounded-full shrink-0 mt-1" />
                         )}
                       </div>
                     </div>
@@ -234,9 +234,9 @@ export function Header({ title, subtitle }) {
                 className="absolute right-0 top-full mt-2 w-56 bg-card rounded-xl border border-border shadow-lg overflow-hidden"
               >
                 <div className="p-4 border-b border-border">
-                  <p className="font-medium text-foreground">Jean Dupont</p>
+                  <p className="font-medium text-foreground">Hugues Hugo</p>
                   <p className="text-sm text-muted-foreground">
-                    jean.dupont@pulsai.com
+                    hugo.dupont@pulsai.com
                   </p>
                 </div>
                 <div className="p-2">

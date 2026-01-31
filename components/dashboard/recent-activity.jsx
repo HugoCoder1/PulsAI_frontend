@@ -84,9 +84,9 @@ export function RecentActivity() {
             Dernières actions sur la plateforme
           </p>
         </div>
-        <button className="text-sm text-primary font-medium hover:underline">
+        {/* <button className="text-sm text-primary font-medium hover:underline">
           Voir tout
-        </button>
+        </button> */}
       </div>
       <div className="space-y-4">
         {activities.map((activity, index) => {
@@ -101,7 +101,7 @@ export function RecentActivity() {
             >
               <div
                 className={cn(
-                  "w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0",
+                  "w-10 h-10 rounded-full flex items-center justify-center shrink-0",
                   activity.avatar === "AI" ? "bg-primary" : "bg-muted"
                 )}
               >
@@ -126,7 +126,7 @@ export function RecentActivity() {
                   {activity.description}
                 </p>
               </div>
-              <span className="text-xs text-muted-foreground flex-shrink-0">
+              <span className="text-xs text-muted-foreground shrink-0">
                 {activity.time}
               </span>
             </motion.div>
