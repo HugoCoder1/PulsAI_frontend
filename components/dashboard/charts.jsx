@@ -42,6 +42,9 @@ const channelsData = [
   { name: "Messenger", value: 10, color: "#0084FF" },
 ];
 
+
+// TOOLTIP COMPOSANT
+
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
@@ -58,6 +61,8 @@ const CustomTooltip = ({ active, payload, label }) => {
   }
   return null;
 };
+
+// CONVERSATION COMPOSANT
 
 export function ConversationsChart() {
   return (
@@ -142,6 +147,8 @@ export function ConversationsChart() {
   );
 }
 
+
+// TICKET COMPOSANT
 export function TicketsChart() {
   return (
     <motion.div
