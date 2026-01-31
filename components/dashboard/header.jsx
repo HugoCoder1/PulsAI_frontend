@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useSidebar } from "./sidebar-context";
+import { notifications } from "@/utils/data";
 
 export function Header({ title, subtitle }) {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -26,33 +27,7 @@ export function Header({ title, subtitle }) {
   const [darkMode, setDarkMode] = useState(false);
   const { mobileOpen, setMobileOpen } = useSidebar();
 
-  const notifications = [
-    {
-      id: 1,
-      type: "message",
-      title: "Nouveau message",
-      description: "Marie a envoyé un message dans le ticket #1234",
-      time: "Il y a 5 min",
-      unread: true,
-    },
-    {
-      id: 2,
-      type: "ticket",
-      title: "Ticket résolu",
-      description: "Le ticket #1232 a été marqué comme résolu",
-      time: "Il y a 15 min",
-      unread: true,
-    },
-    {
-      id: 3,
-      type: "system",
-      title: "Mise à jour système",
-      description: "Une nouvelle version de PulsAI est disponible",
-      time: "Il y a 1h",
-      unread: false,
-    },
-  ];
-
+ 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.documentElement.classList.toggle("dark");
@@ -219,7 +194,7 @@ export function Header({ title, subtitle }) {
           >
             <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
               <span className="text-secondary-foreground font-medium text-sm">
-                JD
+                HH
               </span>
             </div>
           </button>

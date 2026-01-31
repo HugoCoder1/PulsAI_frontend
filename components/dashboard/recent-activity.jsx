@@ -10,54 +10,7 @@ import {
   User,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const activities = [
-  {
-    id: 1,
-    type: "message",
-    title: "Nouvelle conversation",
-    description: "Sophie Martin a démarré une conversation via WhatsApp",
-    time: "Il y a 2 min",
-    avatar: "SM",
-    status: "new",
-  },
-  {
-    id: 2,
-    type: "ticket",
-    title: "Ticket #1234 résolu",
-    description: "Le ticket de réclamation a été fermé avec succès",
-    time: "Il y a 15 min",
-    avatar: "JD",
-    status: "resolved",
-  },
-  {
-    id: 3,
-    type: "message",
-    title: "Réponse automatique",
-    description: "L'IA a répondu à 5 questions fréquentes",
-    time: "Il y a 30 min",
-    avatar: "AI",
-    status: "auto",
-  },
-  {
-    id: 4,
-    type: "ticket",
-    title: "Nouveau ticket urgent",
-    description: "Pierre Durand a soumis un ticket prioritaire",
-    time: "Il y a 45 min",
-    avatar: "PD",
-    status: "urgent",
-  },
-  {
-    id: 5,
-    type: "message",
-    title: "Conversation transférée",
-    description: "Marie a transféré une conversation au support niveau 2",
-    time: "Il y a 1h",
-    avatar: "ML",
-    status: "pending",
-  },
-];
+import { activities } from "@/utils/data";
 
 const statusConfig = {
   new: { color: "bg-primary", icon: MessageSquare },
