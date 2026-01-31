@@ -32,13 +32,13 @@ const menuItems = [
     title: "Conversations",
     icon: MessageSquare,
     href: "/dashboard/conversations",
-    badge: 12,
+    badge: 2,
   },
   {
     title: "Tickets",
     icon: Ticket,
     href: "/dashboard/tickets",
-    badge: 5,
+    badge: 8,
   },
   {
     title: "Campagnes",

@@ -6,7 +6,6 @@ import { Header } from "@/components/dashboard/header";
 import {
   Search,
   Filter,
-  MoreVertical,
   Send,
   Paperclip,
   Smile,
@@ -14,7 +13,6 @@ import {
   Video,
   Info,
   CheckCheck,
-  Clock,
   Bot,
   User,
   X,
