@@ -18,6 +18,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useSidebar } from "./sidebar-context";
 import { notifications } from "@/utils/data";
+import { useRouter } from "next/navigation";
 
 export function Header({ title, subtitle }) {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -26,8 +27,8 @@ export function Header({ title, subtitle }) {
   const [profileOpen, setProfileOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const { mobileOpen, setMobileOpen } = useSidebar();
+  const router = useRouter();
 
- 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.documentElement.classList.toggle("dark");
@@ -215,11 +216,17 @@ export function Header({ title, subtitle }) {
                   </p>
                 </div>
                 <div className="p-2">
-                  <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-foreground hover:bg-muted transition-colors">
+                  <button
+                    onClick={() => router.push("/dashboard/settings")}
+                    className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-foreground hover:bg-muted transition-colors"
+                  >
                     <User className="w-4 h-4" />
                     Mon profil
                   </button>
-                  <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-foreground hover:bg-muted transition-colors">
+                  <button
+                    onClick={() => router.push("/dashboard/settings")}
+                    className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-foreground hover:bg-muted transition-colors"
+                  >
                     <Settings className="w-4 h-4" />
                     Paramètres
                   </button>
