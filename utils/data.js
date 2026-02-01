@@ -4,7 +4,11 @@ import {
   CheckCircle,
   Clock,
   Edit2,
+  FileText,
+  Lightbulb,
+  Mail,
   MessageCircle,
+  MessageSquare,
   Pause,
   Play,
   Settings,
@@ -444,5 +448,43 @@ export const channelPerformance = [
     conversations: 1500,
     responseTime: 3.1,
     satisfaction: 90,
+  },
+];
+
+export const suggestedPrompts = [
+  {
+    icon: MessageSquare,
+    title: "Répondre à un client",
+    prompt:
+      "Aide-moi à rédiger une réponse professionnelle pour un client mécontent",
+  },
+  {
+    icon: Lightbulb,
+    title: "Idées de campagne",
+    prompt:
+      "Propose-moi des idées de campagne marketing pour la Saint-Valentin",
+  },
+  {
+    icon: FileText,
+    title: "Résumer un ticket",
+    prompt: "Résume les points clés de cette conversation client",
+  },
+  {
+    icon: Mail,
+    title: "Email de relance",
+    prompt: "Écris un email de relance pour les paniers abandonnés",
+  },
+];
+
+export const initialMessages = [
+  {
+    id: 1,
+    role: "assistant",
+    content:
+      "Bonjour ! Je suis l'assistant IA de PulsAI. Je suis là pour vous aider à gérer vos conversations clients, créer des campagnes marketing et optimiser votre support. Comment puis-je vous aider aujourd'hui ?",
+    timestamp: new Date().toLocaleTimeString("fr-FR", {
+      hour: "2-digit",
+      minute: "2-digit",
+    }),
   },
 ];
